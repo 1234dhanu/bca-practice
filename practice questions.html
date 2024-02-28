@@ -6,41 +6,359 @@
     <title> PRACTICE 1 </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px;
+        }
+    </style>
 </head>
 
-<body <main>
+<body>
     <header>
-        <h1> practice 1</h1>
+        <h1> Practice 1</h1>
     </header>
     <article>
-        <p>solution are as follows:</p>
+        <h2>Solutions are as follows:</h2>
         <ol>
             <li>
-                the wrong options are <strong>2</strong> and
-            </li>
-            <li>
-                unique Ip adresses will 2<sup>36</sup>=6.8719x10<sup>10</sup>
-
-            </li>
-            <li>
-                for editing we use PUT method.
-            </li>
-            <li>
-                <ol>
-                    <li> <code>H1</code> should be <code>h1 </code></li>
-                    <li><code>p</code> should have a slash.</li>
+                <p><b>Which of the following is not a valid IP address?
+                <ol type="a">
+                    <li>172.168.0.1</li>
+                    <li>172.168.0.0.1</li>
+                    <li>255.255.255.255</li>
+                    <li>256.255.0.1</li>
                 </ol>
             </li>
+            Ans:</b>The valid IP addresses from the options provided are:
+            <ul>
+                <li>172.168.0.1</li>
+                <li>255.255.255.255</li>
+            </ul>   
+                The invalid IP addresses are:
+            <ul> 
+                <li><b>172.168.0.0.1</b> (Invalid because it contains five parts instead of four.)</li>
+                <li><b>256.255.0.1</b> (Invalid because the first part exceeds the maximum value of 255 for an octet in an IP address.)</li>
+            </ul></p>
+            
+
             <li>
-                <code><pre>
-                                &it;!DOCTYPE html&gt;
-                                &it;html&gt;
-                                &it;/html&gt;
-                            </pre></code>
+                <p><b>If it were allowed to use 36 bit IP addresses, how many unique IP address would be there?<br>
+                Ans:</b>If it were allowed to use 36-bit IP addresses, the total number of unique IP addresses can be calculated using the formula:
+            <ul>
+                <li>Total Number of Unique IP Addresses = 2 number of bits</li>
+                <li>Total Number of Unique IP Addresses = 2 number of bits</li>
+ 
+                In this case, since we have 36 bits, the calculation would be:
+
+                <li>Total Number of Unique IP Addresses = 2<sup>36</sup></li>
+                <li>Number of Unique IP Addresses=2<sup>36</sup></li>
+                <li>Total Number of Unique IP Addresses = <b>68,719,476,736 = 6.8719 x 10<sup>10</sup></b></li>
+            </ul></p>
             </li>
-        </ol>
+
+
+            <li>
+                <p><b>If you want to edit an existing document, which is the right HTTP method to use?
+            <ol type="a">
+                <li>GET</li>
+                <li>POST</li>
+                <li>PUT</li>
+                <li>DELETE</li>
+            </ol>
+                Ans:</b> The correct HTTP method to use when editing an existing document is <b>PUT.</b>
+            <ul>
+                <li>GET is used for retrieving data.</li>
+                <li>POST is used for creating new data.</li>
+                <li>PUT is used for updating or editing existing data.</li>
+                <li>DELETE is used for removing data.</li></p>
+            </ul>
+            </li>
+
+
+            <li>
+                <p><b>Find errors in the following HTML code:
+            <ol>
+                <li><code>&lt;h1&gt;</code>Quantum Computation<code>&lt;/H1&gt;</code></li>
+                <li><code>&lt;p&gt;</code>There are various disciplines in quantum computation.<code>&lt;p&gt;</code></li>
+            </ol>
+            Ans:</b>
+            <ol>
+                <li>The closing tag for the <code><b>&lt;h1&gt;</code> element should be lowercase</b>. HTML tags are case-insensitive, but it's a best practice to keep them consistent.</li>
+                <li>The closing tag for the <code><b>&lt;p&gt;</code> element is missing the forward slash /.</b></li></p>
+            </ol>
+            </li>
+
+
+            <li>
+            <p><b>Correct the document structure.
+            <code><pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;head&gt;
+                &lt;body&gt;
+                &lt;/body&gt;
+            &lt;/head&gt;
+            &lt;article&gt;
+                &lt;html&gt;
+                &lt;/html&gt;
+            &lt;article&gt;
+                &lt;title&gt;My Page&lt;/title&gt;</pre></code>
+
+            Ans:</b>
+            <code><pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;My Page&lt;/title&gt;
+                &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;article&gt;
+                        <!-- Content of the article goes here -->
+                        &lt;/article&gt;
+                    &lt;/body&gt;
+            &lt;/html&gt;
+            </pre></code>
+
+            Changes made:
+                <ul>
+                    <li>The <code>&lt;html&gt;</code> tag is moved to enclose the entire document.</li>
+                    <li>The <code>&lt;title&gt;</code> tag is moved inside the <code>&lt;head&gt;</code> section.</li>
+                    <li>The <code>&lt;body&gt;</code> tag is placed outside the <code>&lt;head&gt;</code> section.</li>
+                    <li>The <code>&lt;article&gt;</code> tag is placed within the <code>&lt;body&gt;</code> section.</li>
+                </ul></p>
+            </li>
+
+
+            <li>
+                <p><b>Which of the tags has href as attribute?
+                <ol type="a">
+                        <li>a</li>
+                        <li>link</li>
+                        <li>img</li>
+                        <li>input</li>
+                </ol>
+                Ans: </b>The link tag has an `href ` attribute, which is used to specify the URL of the linked resource. 
+                This tag is commonly used to link external style sheets to HTML documents.</p>
+            </li>
+
+
+            <li>
+                <p><b>Which of the tags has src as attribute?
+                <ol>
+                    <li>a</li>
+                    <li>link</li>
+                    <li>img</li>
+                    <li>input</li>
+                    <li>source</li>
+                    <li>audio</li>
+                    <li>video</li>
+                    <li>table</li>
+                </ol>
+                Ans:</b>These HTML tags have the src attribute:
+                <ul>
+                <li><code>&lt;img&gt;:</code> Used to embed images in an HTML document.</li>
+                <li><code>&lt;source&gt;:</code> Used to specify multiple media resources for media elements, such as <code>&lt;audio&gt;</code> and <code>&lt;video&gt;.</code></li>
+                <li><code>&lt;audio&gt;:</code> Used to embed audio content in an HTML document.</li>
+                <li><code>&lt;video&gt;:</code> Used to embed video content in an HTML document.</li>
+                </ul></p>
+            </li>
+
+
+            <li>
+                <p><b>List any five organization elements.
+
+                Ans:</b> In HTML, organization elements are used to structure and organize the content of a web page. 
+                <ul>
+                    <li><code>&lt;header&gt;</code>: Represents introductory content, typically containing headings, logos, navigation menus, and other elements at the top of a web page or section.</li>
+                    <li><code>&lt;nav&gt;</code>: Defines a section of navigation links, typically used for menus or navigation bars.</li>
+                    <li><code>&lt;main&gt;</code>: Specifies the main content of the document or a specific section within the document. It usually excludes navigation, header, and footer elements.</li>
+                    <li><code>&lt;section&gt;</code>: Represents a thematic grouping of content, typically with a heading, used to divide the content of a document into sections or chapter.</li>
+                    <li><code>&lt;article&gt;</code>: Represents a self-contained piece of content that could be independently distributed or reused, such as a blog post, newspaper article, forum post, or comment.</li>
+                </ul></p>
+            </li>
+            <hr/>
+
+            <li>
+                <p><b>Create a table that shows possible outcomes of rolling two die. Fill the cells with random outcomes. Either use html entities or images for the die face.</p>
+
+                 &#9856;<br>
+                 &#9857;<br>
+                 &#9858;<br>
+                 &#9859;<br>
+                 &#9860;<br>
+                 &#9861;<br>  
+
+                 Ans:</b>
+                 <h3>Two Dice Roll Outcomes</h3>
+                 <table>
+                     <tr>
+                         <td>&#9856;</td>
+                         <td>&#9857;</td>
+                         <td>&#9858;</td>
+                         <td>&#9859;</td>
+                         <td>&#9860;</td>
+                         <td>&#9861;</td>
+                     </tr>
+                     <tr>
+                         <td>&#9857;</td>
+                         <td>&#9860;</td>
+                         <td>&#9861;</td>
+                         <td>&#9858;</td>
+                         <td>&#9856;</td>
+                         <td>&#9859;</td>
+                     </tr>
+                     <tr>
+                         <td>&#9860;</td>
+                         <td>&#9856;</td>
+                         <td>&#9857;</td>
+                         <td>&#9859;</td>
+                         <td>&#9861;</td>
+                         <td>&#9858;</td>
+                     </tr>
+                     <tr>
+                         <td>&#9858;</td>
+                         <td>&#9859;</td>
+                         <td>&#9860;</td>
+                         <td>&#9861;</td>
+                         <td>&#9857;</td>
+                         <td>&#9856;</td>
+                     </tr>
+                     <tr>
+                         <td>&#9861;</td>
+                         <td>&#9858;</td>
+                         <td>&#9856;</td>
+                         <td>&#9857;</td>
+                         <td>&#9859;</td>
+                         <td>&#9860;</td>
+                     </tr>
+                     <tr>
+                         <td>&#9859;</td>
+                         <td>&#9861;</td>
+                         <td>&#9858;</td>
+                         <td>&#9860;</td>
+                         <td>&#9856;</td>
+                         <td>&#9857;</td>
+                     </tr>
+                 </table>     
+            </li>
+
+
+            <li>
+                <p><b>Create a definition list showing state names (as dt) and at least two cities (as dd) in each state.</p>
+                  Ans:</b>
+                    <h4>State-City Definition List</h4>
+                    <dl>
+                    <dt>California</dt>
+                    <dd>Los Angeles</dd>
+                    <dd>San Francisco</dd>
+        
+                    <dt>Texas</dt>
+                    <dd>Houston</dd>
+                    <dd>Dallas</dd>
+        
+                    <dt>New York</dt>
+                    <dd>New York City</dd>
+                    <dd>Buffalo</dd>
+                        <!-- Add more states and cities as needed -->
+                    </dl>
+            </li>
+
+
+            <li>
+                <p><b>Solve the above problem using nested lists: one list for state names and inside each item another list for cities.</p>
+                Ans:</b><h4>State-City Nested Lists</h4>
+
+            <ul>
+            <li>
+            California
+            <ul>
+                <li>Los Angeles</li>
+                <li>San Francisco</li>
+            </ul>
+            </li>
+            <li>
+            Texas
+            <ul>
+                <li>Houston</li>
+                <li>Dallas</li>
+            </ul>
+            </li>
+            <li>
+            New York
+            <ul>
+                <li>New York City</li>
+                <li>Buffalo</li>
+            </ul>
+            </li>
+        </ul>
+            </li>
+
+
+            <li>
+                <p><b>Create a form for setting up profile of a costumer. It should take inputs for name, age, gender, photo, house number, street, locality, city, zip code, state. It should contain a submit button.</p>            Ans:</b>
+
+            <h4>Customer Profile Setup</h4>
+
+    <form action="submit_profile.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+        
+        <label for="house_number">House Number:</label>
+        <input type="text" id="house_number" name="house_number" required><br><br>
+        
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required><br><br>
+        
+        <label for="locality">Locality:</label>
+        <input type="text" id="locality" name="locality" required><br><br>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+        
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" required><br><br>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>In this form:
+     <ul>
+    <li>The action attribute of the <code>&lt;form&gt;</code> tag specifies the URL where the form data will be submitted.</li>
+    <li>The method attribute specifies the HTTP method used to submit the form (in this case, post).</li>
+    <li>The enctype attribute specifies the encoding type for form data, particularly important when uploading files.</li>
+    <li>Various input elements such as text fields, number fields, select dropdowns, and file inputs are used to capture customer details.</li>
+    <li>The required attribute is added to ensure that all mandatory fields are filled before submitting the form.</li>
+    <li>A submit button <code>(&lt;input type="submit"&gt;)</code> is included to allow the user to submit the form.</li>
+     </ul>
+    </p>
+       </li>
+
+    </ol>
+
     </article>
-    </main>
 </body>
 
 </html>
