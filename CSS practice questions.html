@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS practice questions.css">
+</head>
+<body>
+
+    1. Change the color of the given p tag to red using three methods of setting CSS.<br>
+    <code>&lt;p&gt;Change my color.&lt;/p&gt;</code>
+    <br>
+    <br>
+    Method 1: Inline CSS<br>
+    <code>&lt;p style="color: red;"&gt;Change my color.&lt;/p&gt;</code><br><br>
+
+    Method 2: document level CSS
+    <pre><code>
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="mycss.css"&gt;
+        &lt;style&gt;
+            p {
+                color: red;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    </code></pre>
+     <br>
+    Method 3: External CSS<pre><code>
+    p {
+        color: red; 
+    } </code></pre> 
+     <br>
+     <br>
+    2. Correct the error in the following code.<br>
+    <pre><code>
+    &lt;p class="item"&gt;First item.&lt;/p&gt;
+    &lt;p id="item"&gt;Second item&lt;/p&gt;
+    &lt;p id="item"&gt;Third item&lt;/p&gt;</code></pre>
+
+    ANS:<pre><code>
+    &lt;p class="item"&gt;First item.&lt;/p&gt;
+    //Changed id to class for the second and third &lt;p&gt; elements
+        &lt;p class="item"&gt;Second item&lt;/p&gt;
+        &lt;p class="item"&gt;Third item&lt;/p&gt;
+    </code></pre>
+    <br>
+   
+    3. Use border and padding properties on a span element to get the following output:<br>
+
+    <pre><code>
+        &lt;body&gt;
+            &lt;span style="border: 2px solid red;
+            padding-left: 50px;
+            padding-bottom: 50px;"&gt;Hello&lt;/span&gt;
+         &lt;/body&gt;</code></pre>
+
+    <pre><code>
+    <body>
+        <span style="border: 2px solid red;
+        padding-left: 50px;
+        padding-bottom: 50px;">Hello</span>
+     </body></code></pre>
+     <br>
+     <br>
+
+     4. Write the css code that places the items at the center of the container using display: flex;<br>
+     HTML:<br>
+     <pre><code>
+        &lt;body&gt;
+            &lt;div class ="container"&gt;
+                &lt;div class="item"&gt;&lt;/div&gt;
+                &lt;div class="item"&gt;&lt;/div&gt;
+                &lt;div class="item"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+    
+     CSS:<br>
+     .container {
+        height: 300px;
+        border: 2px solid teal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+     }
+
+     .item {
+        width: 50px;
+        height: 40px;
+        border: 1px solid red;
+     } 
+     </code></pre>
+
+
+    5. Write the css code that underlines the contents in<br>
+     <pre><code>&lt;p&gt;Underline me.&lt;/p&gt;
+
+    ANS:
+    p {
+        text-decoration: underline;
+    }
+    </code></pre>
+    
+
+     6. Write the css code that changes the background to black and text color to white.<br>
+     <code>&lt;p&gt;I'm different.&lt;/p&gt;</code><br>
+     ANS:
+     <pre><code>
+     p {
+        background-color: black;
+        color: white;
+    }
+    </code></pre>
+
+    7. Write the HTML and CSS code that obtains the following:<br>
+    HTML:
+    <pre><code>
+    &lt;body&gt;
+        &lt;div class="circle"&gt;
+            Center
+        &lt;/div&gt;
+        &lt;/body&gt;
+
+    CSS:
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid red; 
+            color: red; /* Red text color */
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            font-size: 20px; 
+        }
+    </code></pre>
+
+    8. Write CSS code that using :nth-child() to color even items to red and odd items to green.
+    <pre><code>
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;li&gt;Item 4&lt;/li&gt;
+        &lt;li&gt;Item 5&lt;/li&gt;
+    &lt;/ul&gt;
+
+    ANS:
+        /* Color even items red */
+        li:nth-child(even) {
+        color: red;
+        }
+
+        /* Color odd items green */
+        li:nth-child(odd) {
+        color: green;
+        }
+    </code></pre>
+
+    9. Create the following pattern.<br>
+    
+    HTML
+    <pre><code>
+    &lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="circle"&gt;&lt;/div&gt;
+        &lt;div class="circle"&gt;&lt;/div&gt;
+        &lt;div class="circle"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+     &lt;/body&gt;
+    
+     CSS:
+     .container {
+        width: 800px;
+        height: 500px;
+        position: relative;
+        border: 2px solid black; /* Optional: Adding border to visualize the container */
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid green;
+        position: absolute;
+      }
+      
+      .circle:nth-child(1) {
+        left: 260px;
+      }
+      
+      .circle:nth-child(2) {
+        right: 250px;
+      }
+      
+      .circle:nth-child(3) {
+        top: 100px;
+      }
+    </code></pre>  
+</body>
+</html>
